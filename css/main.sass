@@ -38,7 +38,6 @@ body
     .container
         margin: 0 4em
 
-
 // Header
 header
     background-color: $dark-blue-intro
@@ -119,4 +118,44 @@ nav
         display: grid
         grid-template-columns: repeat(2, 1fr)
         justify-items: center
+
+.productive
+    width: 100%
+    margin-top: 10em
+    gap: 2em
+    .productive-img img
+        padding: 0 1em
+        width: 100%
+        max-width: 600px
     
+    .productive-info
+        gap: 1em
+        align-items: start
+
+    span
+        font-family: $raleway
+        font-weight: 700
+        font-size: 1.3em
+    p
+        width: 100%
+        max-width: 400px
+    
+    a
+        color: $cyan
+        text-decoration: none
+        padding-bottom: .5em
+        border-bottom: 1px solid $cyan
+        display: flex
+
+        img
+            margin-left: .3em
+            height: auto
+            width: 20px
+
+@media (min-width: 1100px)
+    .productive
+        flex-direction: row
+        gap: 7em
+
+        span
+            font-size: 2em
