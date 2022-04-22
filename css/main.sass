@@ -20,11 +20,19 @@ body
     font-size: 14px
     font-family: 'Open Sans', 'sans-serif'
     background-color: $dark-blue-main
+    color: $white
+    line-height: 1.5em
 
 
 // Utility Classes
 .container
     margin: 0 2em
+
+.flex-center-col
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
 
 @media (min-width: 768px)
     .container
@@ -32,8 +40,20 @@ body
 
 
 // Header
+header
+    background-color: $dark-blue-intro
+    background-image: url(../images/bg-curvy-mobile.svg)
+    background-size: contain
+    background-repeat: no-repeat
+    background-size: 900px
+    background-position: 50% 100%
+@media (min-width: 700px)
+    header
+        background-image: url(../images/bg-curvy-desktop.svg)
+        background-size: 2000px
+        background-position: 150% 160%
 nav
-    margin-top: 3em
+    padding-top: 3em
     display: flex
     justify-content: space-between
     align-items: center
@@ -51,4 +71,52 @@ nav
     a:hover
         color: $white
         text-decoration: underline
+.hero-display
+    margin-top: 5em
+    padding: 0 .5em
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 2em
+    
+    img
+        width: 100%
+        max-width: 700px
+    h1, p
+        text-align: center
+    
+    .call-to-action
+        background: linear-gradient(to right, $cyan, $blue)
+        padding: 1em 4em
+        border-radius: 2em
+        color: $white
+        text-decoration: none
+
+// Main
+.features
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 5em
+    gap: 2em
+.feature
+    gap: 2em
+.feature-info
+    gap: 1em
+    text-align: center
+    span
+        font-family: $raleway
+        font-weight: 700
+        font-size: 1.3em
+    p
+        width: 100%
+        max-width: 400px
+@media (min-width: 900px)
+    .features
+        padding: 0 10em
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        justify-items: center
     
