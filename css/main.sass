@@ -19,3 +19,36 @@ $raleway: 'Raleway', 'sans-serif'
 body
     font-size: 14px
     font-family: 'Open Sans', 'sans-serif'
+    background-color: $dark-blue-main
+
+
+// Utility Classes
+.container
+    margin: 0 2em
+
+@media (min-width: 768px)
+    .container
+        margin: 0 4em
+
+
+// Header
+nav
+    margin-top: 3em
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.logo img
+    height: auto
+    width: 100px
+
+.nav-links
+    display: flex
+    gap: 1em
+    a
+        color: lightgray
+        text-decoration: none
+    a:hover
+        color: $white
+        text-decoration: underline
+    
