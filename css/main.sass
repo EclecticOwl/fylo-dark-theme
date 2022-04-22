@@ -63,7 +63,7 @@ nav
 
 .nav-links
     display: flex
-    gap: 1em
+    gap: 2em
     a
         color: lightgray
         text-decoration: none
@@ -118,7 +118,7 @@ nav
         display: grid
         grid-template-columns: repeat(2, 1fr)
         justify-items: center
-
+// Productive
 .productive
     width: 100%
     margin-top: 10em
@@ -159,3 +159,50 @@ nav
 
         span
             font-size: 2em
+
+// Testimonials
+.testimonials
+    margin-top: 10em
+    gap: 2em
+
+.quote
+    position: relative
+
+.quote:after
+    position: absolute
+    top: 0
+    left: 0
+    content: url('../images/bg-quotes.png')
+    z-index: -1
+    transform: translate(10px, -35px)
+
+.testimonial
+    background-color: $dark-blue-test
+    padding: 3em
+    align-items: start
+    gap: 1em
+    width: 100%
+    max-width: 400px
+    border-radius: 1em
+    
+    .author
+        flex-direction: row
+        gap: 1em
+    
+    img
+        height: auto
+        width: 40px
+        border-radius: 2em
+    
+    .author-bio
+        align-items: start
+         
+        p
+            font-size: .7em
+    
+    span
+        font-weight: 700
+
+@media (min-width: 1100px)
+    .testimonials
+        flex-direction: row
