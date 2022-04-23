@@ -193,6 +193,7 @@ nav
     width: 100%
     max-width: 400px
     border-radius: 1em
+    box-shadow: 0 .2em 1em $dark-blue-intro
     
     .author
         flex-direction: row
@@ -220,6 +221,7 @@ nav
 footer
     margin-top: 15em
     padding-top: 12em
+    padding-bottom: 2em
     background-color: $dark-blue-footer
     position: relative
 
@@ -236,16 +238,20 @@ footer
     padding: 1em
 
 form
-    background-color: $dark-blue-main
+    background-color: $dark-blue-intro
     padding: 2em
     gap: 1em
     width: 100%
     min-width: 320px
     max-width: 600px
-    box-shadow: 0 .5em .5em $dark-blue-footer
+    box-shadow: .25em .25em .25em $dark-blue-footer
 
     p
+        margin: 1em 0
         text-align: center
+    span
+        font-weight: 700
+        font-size: 1.5em
 .form-input
     display: flex
     flex-direction: column
