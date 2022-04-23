@@ -29,7 +29,7 @@ Users should be able to:
 
 ## My process
 
-I decided to go with a mobile first approach for this challenge. I also decided to break the components down by section and style while creating them (header, main, footer). This process seemed to help both mentally and seemed to save a few hours.
+I decided to go with a mobile first approach for this challenge. I also decided to break the components down by section and style while creating them (header, main, footer). This process seemed to help both mentally and saved a few hours.
 
 ### Built with
 - SASS
